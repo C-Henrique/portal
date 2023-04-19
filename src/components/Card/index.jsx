@@ -9,17 +9,6 @@ import {
   CardDes,
 } from './style.jsx';
 function Card({ cor, title, param, link, icone }) {
-  const handleClick = (links) => {
-    window.open(
-      links,
-      'Rocket.Chat',
-      '_blank',
-      'noopener,noreferrer',
-      'width=1558',
-      'height=913'
-    );
-  };
-
   return (
     <CardContainer color={cor}>
       <CardTitle>
@@ -33,8 +22,8 @@ function Card({ cor, title, param, link, icone }) {
           <img src={icone} alt="icone" />
         </LinkImg>
         <LinkUrl color={cor}>
-          <a href="#" onClick={() => handleClick(link)}>
-            Link
+          <a href={link} target="_blank">
+            {title}
           </a>
           <i className="bx bx-link-external"></i>
         </LinkUrl>

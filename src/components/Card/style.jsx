@@ -51,7 +51,7 @@ export const LinkUrl = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in;
   position: relative;
 
   > a {
