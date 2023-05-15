@@ -2,15 +2,13 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
   width: 100%;
-  height: 100px;
-  display: grid;
+  height: 15vh;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, 300px);
   background: #073b4c;
   color: white;
-  margin-top: 7rem;
+  margin-top: 20vh;
   display: flex;
-  position: relative;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;

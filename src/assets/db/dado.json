@@ -1,0 +1,34 @@
+[
+    {   
+        "id":1,
+        "cor":"red",
+        "link":"https://www.google.com",
+        "param":"Sistema de Chat.",
+        "title":"RocketChat",
+        "icone": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/null/external-rocketchat-is-the-leading-open-source-team-chat-software-solution-logo-color-tal-revivo.png"
+    },
+    {
+        "id":2,
+        "cor":"blue",
+        "link":"http://192.168.0.69:8089",
+        "param":"Sistema de Acompanhamento do WMS.",
+        "title":"WMS - Acompahamento",
+        "icone": "https://img.icons8.com/dusk/64/null/warehouse.png"
+    },
+    {
+        "id":3,
+        "cor":"#3f37c9",
+        "link":"https://pecicero.sz.chat/webchat/v2/?cid=62796540e7133b0017ba6142&host=https://pecicero.sz.chat",
+        "param":"Suporte via Chat.",
+        "title":"Sz.Chat",
+        "icone": "https://img.icons8.com/color/48/null/chat--v1.png"
+    },
+    {
+        "id":4,
+        "cor":"green",
+        "link":"https://pecicero.sz.chat/webchat/v2/?cid=62796540e7133b0017ba6142&host=https://pecicero.sz.chat",
+        "param":"Acesso a Operação Bancaria.",
+        "title":"Operação Bancaria.",
+        "icone": "https://img.icons8.com/color/48/null/money-bag.png"
+    }
+]

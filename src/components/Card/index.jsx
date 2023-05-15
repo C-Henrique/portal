@@ -8,7 +8,12 @@ import {
   LinkUrl,
   CardDes,
 } from './style.jsx';
+
 function Card({ cor, title, param, link, icone }) {
+  const handleRedirect = (l) => {
+    console.log(link);
+    window.open(`http://${link}`, '_blank');
+  };
   return (
     <CardContainer color={cor}>
       <CardTitle>
@@ -22,9 +27,7 @@ function Card({ cor, title, param, link, icone }) {
           <img src={icone} alt="icone" />
         </LinkImg>
         <LinkUrl color={cor}>
-          <a href={link} target="_blank">
-            {title}
-          </a>
+          <button onClick={handleRedirect}>{title}</button>
           <i className="bx bx-link-external"></i>
         </LinkUrl>
       </CardLink>

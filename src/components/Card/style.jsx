@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  width: 220px;
-  height: 200px;
+  width: 270px;
+  height: 210px;
   position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   box-shadow: 0px 6px 9px -1px;
-  padding: 30px;
+  padding: 20px;
   font-family: 'Inter', sans-serif;
   margin: 20px;
   transition: 0.2s ease-in-out;
@@ -19,16 +19,19 @@ export const CardContainer = styled.div`
 `;
 
 export const CardTitle = styled.div`
-  font-size: 25px;
+  font-size: 18px;
   text-align: left;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
 `;
-export const CardDes = styled.div``;
+export const CardDes = styled.div`
+  font-size: 13px;
+  margin-bottom: 5px;
+`;
 export const CardLink = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  margin: 5px auto;
   font-weight: 500;
   gap: 30px;
   justify-content: space-between;
@@ -54,10 +57,15 @@ export const LinkUrl = styled.div`
   transition: all 0.2s ease-in;
   position: relative;
 
-  > a {
+  > button {
+    border: none;
+    background: none;
+    cursor: pointer;
     list-style: none;
+    padding: 0px;
     text-decoration: none;
-    margin-right: 3px;
+    margin-right: 0px;
+    font-size: 15px;
     font-weight: 600;
   }
   &:hover {

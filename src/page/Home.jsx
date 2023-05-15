@@ -4,27 +4,28 @@ import GlobalStyle from '../styles/GlobalStyled.jsx';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import { AppStyled } from '../styles/styles';
-import json from '../db/dado.json';
+import db from '../assets/db/dado.json';
 function Home() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    setData(json);
+    setData(db);
   }, []);
   return (
     <>
       <Banner></Banner>
       <AppStyled>
-        {data.map((element) => {
+        {data.map((element) => (
           <Card
+            key={element.id}
             cor={element.cor}
             link={element.link}
             icone={element.icone}
             param={element.param}
             title={element.title}
-            key={element.id}
-          />;
-        })}
+            history={element.link}
+          />
+        ))}
         <GlobalStyle />
       </AppStyled>
       <Footer />
